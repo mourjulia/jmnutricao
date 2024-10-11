@@ -11,3 +11,51 @@
   --subtitulos: "Inter", sans-serif;
   --text: "Poppins", sans-serif;
 }
+
+body {
+  font-family: var(--subtitulos);
+}
+
+.topo {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+
+  .limitador {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 95vw;
+    margin: auto;
+  }
+
+  a {
+    color: #213435;
+    font-weight: 500;
+  }
+}
+
+h1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+}
+
+span {
+  display: block;
+  width: 100px;
+  line-height: 70%;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.links-menu{
+  display: flex;
+  gap: 10px;
+}
