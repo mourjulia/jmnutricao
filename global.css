@@ -55,7 +55,7 @@ span {
 
 }
 
-.links-menu{
+.links-menu {
   display: flex;
   gap: 10px;
 }
@@ -70,16 +70,31 @@ footer {
   padding: 20px;
   background-color: black;
 }
+
 .logo {
-  width: 100px; 
+  width: 100px;
 }
+
 .separador {
   width: 3px;
-  height: 50px; 
-  background-color: #F9A271; 
+  height: 50px;
+  background-color: #F9A271;
   margin: 0 20px;
 }
-.redes-sociais {
+
+.redes-sociais div {
+  display: flex;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: white;
+  margin: 5px 0;
+}
+
+/* .redes-sociais {
+  
+    
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -87,10 +102,62 @@ footer {
   padding: 10px;
   gap: 20px;
 }
-.redes-sociais a {
-  text-decoration: none;
-  color: white;
-  margin: 5px 0;
+*/
+
+.redes-sociais img {
+  width: 20px;
 }
 
+/* página index */
+.destaque {
+  background-image: url(/assets/a-doctor-smiling.png);
+  
 
+  height: 75vh;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2,
+  p {
+    color: var(--titulos);
+    text-align: center;
+    animation-name: animaDestaque;
+    animation-duration: .4s;
+
+  }
+
+  h2 {
+    font-size: clamp(3rem, 10vw, 7rem);
+    color: white;
+  }
+
+  p {
+    transition: margin-top 0.5s ease;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    animation-delay: .6s;
+    animation-fill-mode: backwards;
+    color: white;
+    font-weight: bold;
+    
+  }
+
+}
+
+@keyframes animaDestaque {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
