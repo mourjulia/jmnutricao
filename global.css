@@ -4,7 +4,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-}
+} 
+
 
 :root {
   --titulos: "Inter", sans-serif;
@@ -112,18 +113,17 @@ footer {
 .destaque {
   background-image: url(/assets/a-doctor-smiling.png);
   
-
   height: 75vh;
-
+  
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
   h2,
   p {
     color: var(--titulos);
@@ -160,4 +160,12 @@ footer {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.destaque-conteudo{
+  background-color: #000000a1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
