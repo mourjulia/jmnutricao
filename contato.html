@@ -37,38 +37,42 @@
     </header>
     <!-- Fim do header -->
 
-    <main class="conteudo">
+    <main class="conteudo ">
 
-        <article class="destaque desta-contato">
+
+        <article class="destaque2">
+            <div class="destaque-conteudo">
             <h2>Nutrição leve, sem restrições!</h2>
-            <p>Alimente-se com liberdade, escolhendo alimentos leves e saudáveis, sem restrições.
+            <p>Alimente-se com liberdade, escolhendo alimentos leves e saudáveis, sem restrições. <br>
                 Sinta prazer em cada refeição!.</p>
+            </div>
         </article>
 
-        <div>
+        <div class="titulo-contato">
             <p>Transforme sua alimentação!</p><br>
             <p>Preencha o formulário e nós entraremos em contato.</p>
         </div>
 
+        <!-- começo do formulário -->
         <form action="" method="post">
-            <div>
+            <div class="nome">
                 <label for="nome">Nome:</label>
-                <input required type="text" name="nome" id="nome" placeholder="Digite o nome completo">
+                <input class="text-nome" required type="text" name="nome" id="nome" placeholder="Digite o nome completo">
             </div>
 
-            <div>
+            <div class="email" >
                 <label for="email">E-mail:</label>
-                <input required type="email" name="email" id="email">
+                <input class="text-email" required type="email" name="email" id="email" placeholder="exemplo@exemplo.com">
             </div>
 
 
 
 
-            <div>
+            <div class="mensagem">
                 <label for="mensagem">Mensagem:</label>
 
 
-                <textarea required name="mensagem" id="mensagem" cols="25" rows="7"></textarea>
+                <textarea class="text-mensagem" required name="mensagem" id="mensagem" cols="25" rows="7" placeholder="Sua mensagem aqui..." ></textarea>
             </div>
             <button type="submit">Enviar dados</button>
         </form>
