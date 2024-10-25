@@ -62,58 +62,68 @@ span {
   gap: 10px;
 }
 
-
 /* Estilos do rodapé */
 
 footer {
+  background-color: #213435;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
-  width: 100px;
+  width: 100%;
+  max-width: 200px;
 }
 
-.separador {
-  width: 3px;
-  height: 50px;
-  background-color: #F9A271;
-  margin: 0 20px;
-}
-
-.redes-sociais div {
+.social {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.redes-sociais a {
-  text-decoration: none;
-  color: white;
-  margin: 5px 0;
+.social h3,
+.social a {
+  color: #f0f0f0;
 }
 
-/* .redes-sociais {
-  
-    
+.social h3 {
+  margin-bottom: 0.6rem;
+}
+
+.social img {
+  width: 30px;
+}
+
+.social a {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  gap: 20px;
+  width: fit-content;
+  gap: 10px;
 }
-*/
 
-.redes-sociais img {
-  width: 20px;
+.social .separador {
+  height: 4px;
+  width: 100%;
+  max-width: 200px;
+  background-color: #f9a271;
 }
+
 
 /* página index */
 
 .destaque {
-  background-image: url(/assets/a-doctor-smiling.png);
+  background-image: url(/assets/foto-cliente.jpg);
   height: 75vh;
   background-size: cover;
   background-position: center;
@@ -411,7 +421,7 @@ h2 {
 
 .destaque2 {
   background-image: url(/assets/contato.svg);
-  
+
   height: 75vh;
   background-size: cover;
   background-position: center;
@@ -421,7 +431,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 .destaque2 h2 {
@@ -441,14 +451,14 @@ h2 {
 
 .destaque2 h2 {
   font-size: 4rem;
-  
-  
+
+
 }
 
 .destaque2 p {
   font-size: 1.3rem;
   font-weight: var(--text);
-  
+
 }
 
 .titulo-contato {
@@ -460,56 +470,112 @@ h2 {
 form {
   text-align: center;
   padding: 20px;
-  
+
   display: block;
   flex-direction: column-reverse;
 }
 
-input {
-  border-radius: 5px;
-}
-
+input,
 textarea {
-   border-radius: 5px;
+  font-family: var(--text);
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  background-color: #a6b9857a;
 }
 
-.nome {
-  padding: 15px;
+input {
+  height: 3rem;
 }
 
-.email {
-  padding: 15px;
+
+label {
+  margin-bottom: 12px;
 }
 
+.email,
+.nome,
 .mensagem {
-  padding: 15px;
-}
+  margin-top: 1rem;
 
-.text-mensagem {
-  background-color: #A6B985;
-}
+  /* display: flex;
+  flex-direction: column; */
 
-.text-nome {
-  background-color: #A6B985;
-}
-
-.text-email {
-  background-color: #A6B985;
+  flex: 1;
+  text-align: left;
 }
 
 
-button {
-  display: flex; 
+.botao {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
 
-  
   background-color: #010039;
   color: #fff;
 
   border-radius: 8px;
+  border: none;
+
+  font-family: var(--text);
+  font-size: 1.2rem;
+
+  width: 100%;
+  height: 3.1rem;
+
+  margin-top: 1rem;
 
 }
 
 
+/* começo da página de cards-continuação da home  */
+.artigos {
+  padding: 1rem;
+}
+
+.artigos h2 {
+  font-family: var(--subtitulos);
+  margin-top: 20px;
+  text-align: left;
+}
+
+.artigos p {
+  font-family: var(--text);
+  margin: 1rem 0;
+}
+
+.artigos strong {
+  font-size: 20px;
+}
+
+.artigos a {
+  display: flex;
+  background-color: #F9A271;
+  color: #ffffff;
+  font-family: var(--text);
+  font-size: 15px;
+  height: 2.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+/* começo da página de mitos e verdades */
+
+.destaque3 {
+  
+
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.562);
+}
