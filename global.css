@@ -163,6 +163,7 @@ footer {
   font-weight: bold;
 }
 
+/* Animação precisa colocar  no final do CSS, após a finalização */
 
 @keyframes animaDestaque {
   from {
@@ -327,8 +328,9 @@ footer {
   color: #fff;
   border-radius: 5px;
 }
+.negocio h2 {
+  margin-top: 17px;
 
-h2 {
   font-size: 2rem;
   text-align: center;
 
@@ -413,9 +415,7 @@ h2 {
   font-weight: bold;
 }
 
-.negocio h2 {
-  margin: 17px;
-}
+
 
 /* página contato */
 
@@ -565,7 +565,7 @@ label {
 /* começo da página de mitos e verdades */
 
 .destaque3 {
-  
+  background-image: url(assets/fundo-mito.jpg);
 
   height: 75vh;
   background-size: cover;
@@ -577,5 +577,69 @@ label {
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.destaque3 h2 {
+  text-align: center;
+  animation-name: animaDestaque;
+  animation-duration: 0.4s;
+  color: white;
+}
+
+
+
+.destaque3 h2 {
+  font-size: 4rem;
+}
+
+.destaque3, .destaque-conteudo3 {
+  background-color: #00000070;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mitos-verdades h2 {
+  font-size: 2rem;
+  font-weight: var(--titulos);
+  font-family: var(--titulos);
+  text-align: center;
+  position: relative;
+}
+
+.mitos-verdades p {
+  font-size: 1.3rem;
+  font-weight: var(--text);
+  font-family: var(--text);
+}
+
+/* .mitos-verdades h2::after{
+  display: block;
+  content: '';
+
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+
+  height: 3px;
+  width: 100px;
+  background-color: #71f9c0;
+} */
+
+.mitos-verdades .linha {
+  height: 3px;
+  width: 100px;
+  background-color: #f9a271;
+  margin-bottom: 1.5rem;
+
+}
+
+.curiosidades{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
