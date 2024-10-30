@@ -35,8 +35,10 @@ body {
 .limitador,
 .limiter-content,
 .cards,
+.mitos-verdades,
 .footer,
-#my-form {
+#my-form,
+.artigos {
   margin: auto;
   max-width: 1200px;
 }
@@ -127,7 +129,7 @@ footer {
   background-image: url(assets/foto-cliente.jpg);
   height: 75vh;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */ 
   background-attachment: fixed;
 
   display: flex;
@@ -159,7 +161,7 @@ footer {
   margin-top: 1rem;
 }
 
-.destaque p + p {
+.destaque p+p {
   color: #f9a271;
   font-weight: bold;
 }
@@ -233,7 +235,7 @@ footer {
   line-height: 170%;
 }
 
-.assessoria p + p {
+.assessoria p+p {
   margin-top: 1.2rem;
 }
 
@@ -340,6 +342,7 @@ footer {
   color: #fff;
   border-radius: 5px;
 }
+
 .negocio h2 {
   margin-top: 17px;
 
@@ -524,11 +527,17 @@ label {
   height: 3.1rem;
 
   margin-top: 1rem;
+
+  cursor: pointer;
 }
 
 /* começo da página de cards-continuação da home  */
 .artigos {
   padding: 1rem;
+}
+
+.artigos article {
+  margin-bottom: 3rem;
 }
 
 .artigos h2 {
@@ -582,25 +591,29 @@ label {
   animation-name: animaDestaque;
   animation-duration: 0.4s;
   color: white;
+  font-size: clamp(3rem, 10vw, 7rem);
 }
 
-.destaque3 h2 {
-  font-size: 4rem;
+.destaque3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--titulos);
+
 }
 
-.destaque3,
 .destaque-conteudo3 {
   background-color: #00000070;
   width: 100%;
   height: 100%;
+
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .mitos-verdades h2 {
   font-size: 2rem;
-  font-weight: var(--titulos);
   font-family: var(--titulos);
   text-align: center;
   position: relative;
@@ -611,19 +624,6 @@ label {
   font-weight: var(--text);
   font-family: var(--text);
 }
-
-/* .mitos-verdades h2::after{
-  display: block;
-  content: '';
-
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-
-  height: 3px;
-  width: 100px;
-  background-color: #71f9c0;
-} */
 
 .mitos-verdades .linha {
   height: 3px;
@@ -637,10 +637,20 @@ label {
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 1rem;
 }
 
+.curiosidades p {
+  font-family: var(--text);
+  font-size: 1.2rem;
+}
 
-.servico-top{
+.servico-top {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -649,16 +659,15 @@ label {
 }
 
 @media screen and (min-width: 750px) {
-  .servico-top{
+  .servico-top {
     flex-direction: row;
   }
 
-  .servico-top h2{
+  .servico-top h2 {
     font-size: 2rem;
   }
-  
-  .servicos p{
+
+  .servicos p {
     font-size: 1.5rem;
-    
   }
 }
